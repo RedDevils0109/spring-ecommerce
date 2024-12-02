@@ -1,0 +1,21 @@
+server:
+  port: 8081
+spring:
+  datasource:
+    url: jdbc:mysql://localhost:3306/sportcenter
+    username: root
+    password: Minhkha2005!
+  application:
+    name: sportcenter
+  jpa:
+    hibernate:
+      ddl-auto: update
+      naming:
+        physical-strategy: org.hibernate.boot.model.naming.PhysicalNamingStrategyStandardImpl
+    properties.hibernate:
+      dialect: org.hibernate.dialect.MySQL8Dialect
+      format_sql: true
+  data:
+    redis:
+      host: localhost
+      port: 6379
