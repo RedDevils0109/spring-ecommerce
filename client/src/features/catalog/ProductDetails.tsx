@@ -30,7 +30,7 @@ export default function ProductDetails(){
     const formatPrice = (price: number): string =>{
         return new Intl.NumberFormat('en-IN', {
             style: 'currency',
-            currency: 'INR',
+            currency: 'VND',
             minimumFractionDigits: 2
         }).format(price);
     };
